@@ -568,7 +568,7 @@ class GoChaincodeTranslator:
     def generate_chaincode(
             self,
             bindings: dict[str, dict],
-            output_path: str = "resource/chaincode.go",
+            output_path: str = "chaincode/chaincode.go",
     ):
         self._hook_codes = {
             key: {"pre_activate_next": [], "when_triggered": []}
